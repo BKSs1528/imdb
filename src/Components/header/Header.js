@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom"
 import "./Header.css"
+import Search from "./Search"
 
 const Header = () => {
     return (
@@ -10,6 +11,8 @@ const Header = () => {
                     <Link style={{textDecoration:"none"}} to="/movies/popular"><span>Popular</span></Link>
                     <Link style={{textDecoration:"none"}} to="/movies/top_rated"><span>Top rated</span></Link>
                     <Link style={{textDecoration:"none"}} to="/movies/upcoming"><span>Upcoming</span></Link>
+                    <Search/>
+                    {/* <span className="search"><Search/></span> */}
                 </div>
             </div>
         </>
